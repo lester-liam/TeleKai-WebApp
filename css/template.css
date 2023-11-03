@@ -4,6 +4,13 @@ body
     margin: 0 auto;
     font-size:0;
 }
+
+.headings
+{
+    width: 100%;
+    position:fixed;
+}
+
 .header
 {
     background-color: #770FAF;
@@ -17,7 +24,7 @@ body
     margin: 0;
     background-color: #E6E6E6;
     width: 100%;
-    display:inline;
+    float:left;
 }
 
 .subheader p
