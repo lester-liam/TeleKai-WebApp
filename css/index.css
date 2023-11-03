@@ -10,6 +10,19 @@
     border-color: grey;
 }
 
+.list-body > li:hover
+{
+    font-size: 16px;
+    padding: 10%;
+    background-color: #770FAF;
+    color: #E6E6E6;
+
+    list-style: none;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-color: grey;
+}
+
 .list-body img
 {
     width: 12px;
