@@ -1,45 +1,189 @@
 body 
 {
-    font-family: sans-serif;
     margin: 0 auto;
-    font-size:0;
 }
 
 .headings
 {
+    top: 0;
+    position: sticky;
     width: 100%;
-    position:fixed;
+    display: inline-block;
 }
 
 .header
 {
+    top: 0;
     background-color: #770FAF;
-    font-size:0;
     width: 100%;
+    height: 60px;
     float: left;
 }
 
 .subheader
 {
-    margin: 0;
+    top: 0;
+    height: 30px;
     background-color: #E6E6E6;
     width: 100%;
-    float:left;
+    float: left;
 }
 
-.subheader p
+button, input[type=button]
 {
-    font-size: 12px;
-    color: #6A6A6A;
-    text-align: left;
-    font-weight: bold;
-    padding-left: 5%;
-    margin: 2%;
+    background-color: #770FAF;
+    
+    font-family: OpenSansRegular;
+    font-size: 17px;
+    color: #E6E6E6;
+    padding: 8px 16px;
+    cursor:pointer;
+    border: none;
 }
-.header h1
+
+a
 {
-    font-size: 16px;
+    text-decoration: none;
+}
+/* H1	Header text	Regular/400	17 */
+/* H3	Tab text	Regular/400	14 */
+/* H4	Separator text	Regular/400	14 */
+/* P.PRI	Primary text	Regular/400	17 */
+/* P.SEC	Secondary text	Regular/400	14 */
+/* P.THI	Tertiary text	Regular/400	12 */
+/* P, UL	Body text	Regular/400	17 */
+/* P.BTN	Button text	Regular/400	17 */
+
+/* Source: https://developer.kaiostech.com/docs/sfp-3.0/design-guide/typography/" */
+@font-face {
+    font-family: OpenSansRegular;
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+}
+
+h1 {
+    font-family: OpenSansRegular;
+    font-size: 17px;
     color: #FFFFFF;
     text-align: center;
-    margin: 5%;
+    vertical-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+}
+
+h4 {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    color: #6A6A6A;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5%;
+}
+
+p.pri, label {
+    font-family: OpenSansRegular;
+    font-size: 17px;
+}
+
+p.sec {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+}
+
+p.thi {
+    font-family: OpenSansRegular;
+    font-size: 12px;
+}
+
+p.ul {
+    font-family: OpenSansRegular;
+    font-size: 17px;
+}
+
+p.BTN {
+    font-family: OpenSansRegular;
+    font-size: 17px;
+}
+
+/* H2	Header of body text	Semibold/600	17 */
+@font-face {
+    font-family: OpenSansSemiBold600;
+    src: url(../fonts/OpenSans-SemiBold.woff);
+    font-weight: 600;
+}
+
+h2 {
+    font-family: OpenSansSemiBold600;
+    font-size: 17px;
+}
+
+/* P.LINK	Hyperlink text	Bold/700	17 */
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+}
+
+p.link {
+    font-family: OpenSansBold;
+    font-size: 17px;
+}
+
+footer
+{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: fixed;
+}
+
+
+
+footer {
+    width:240px;
+    height: 30px;
+    text-align:center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#softkey-left {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    float:left;
+    text-align: center;
+    margin: 2px;
+    width:80px;
+}
+
+#softkey-center {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    margin:0 auto;
+    margin: 2px;
+    width:80px;
+
+    text-align: center;
+}
+
+#softkey-right {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+    text-align: right;;
+    float: right;
+    margin: 2px;
+    width:80px;
+
+    margin-right: 5px;
 }

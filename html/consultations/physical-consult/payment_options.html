@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/button-hover.css">
+
+    <title>Payment</title>
+
+    <style>
+        .container
+        {
+            padding-left: 5%;
+        }
+
+        input[type="text"], textarea {
+                width: 90%;
+                height: 40px;
+                margin-top: 7px;
+                margin-bottom: 7px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="headings">
+        <div class="header">
+            <h1>Payment Options</h1>
+        </div>
+        <div class="subheader">
+            <h4 id="subheader-text">Select Payment Options</h4>
+        </div>
+    </div>
+    <div class="list-body">
+    <a href="clinic_appt_confirmed.html"> 
+        <li onmouseover="select(0)" onmouseout= "deselect(this)">
+            <p class="pri">Pay in Clinic <img src="../../../assets/right-arrow.png" alt="right-arrow"/></p>
+        </li>
+    </a>
+    <a href="credit_card_payment.html">
+        <li onmouseover="select(1)" onmouseout= "deselect(this)">
+            <p class="pri">Credit/Debit Card<img src="../../../assets/right-arrow.png" alt="right-arrow"/></p>
+        </li>
+    </a>
+    <a href="../../../menu.html">
+        <li onmouseover="select(2)" onmouseout= "deselect(this)">
+            <p class="pri">Cancel Booking<img src="../../../assets/right-arrow.png" alt="right-arrow"/></p>
+        </li>
+    </a>
+</div>
+</body>
+</html>

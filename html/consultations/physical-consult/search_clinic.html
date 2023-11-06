@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../css/template.css">
+        <link rel="stylesheet" href="../../../css/button-hover.css">
+        <title>New Consultation Payment Info</title>
+        <style>
+            input[type="text"], textarea {
+                width: 90%;
+                height: 40px;
+                margin-top: 7px;
+                margin-bottom: 7px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            .header {
+                text-align: center;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            li {
+                cursor: pointer;
+                padding: 8px;
+                border: 1px solid #3A3A3A;
+                border-radius: 3px;
+                transition: background-color 0.2s;
+                font-family: OpenSansRegular;
+                font-size: 17px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 12px;
+            }
+
+            li:hover {
+                background-color: #770FAF;
+                color: #E6E6E6;
+                font-family: OpenSansRegular;
+                font-size: 17px;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 12px;
+            }
+
+            input[type=button]
+            {
+                margin-left: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="headings">
+            <div class="header">
+                <input type="text" id="locationInput" placeholder="Type a location">
+            </div>
+            <div class="subheader">
+                <h4>Search for Location</h4>
+            </div>
+        </div>
+        <div class="container">
+            <ul id="suggestions"></ul>
+            <a href="book_clinic_appt.html">
+                <input type="button" value="Confirm">
+            </a>
+        </div>
+
+        <script>
+            // Sample list of locations for demonstration
+            const locations = [
+                "Seksyen 14, 40000 Shah Alam, Selangor, Malaysia",
+                "Jalan Angsana 3, Bandar Baru Air Itam, 11500 Ayer Itam, Pulau Pinang, Malaysia",
+                "Sabah",
+                "Sarawak",
+                "Johor",
+                "Malacca",
+            ];
+
+            const locationInput = document.getElementById("locationInput");
+            const suggestionsList = document.getElementById("suggestions");
+
+            locationInput.addEventListener("input", () => {
+                const userInput = locationInput.value.trim().toLowerCase();
+                const filteredLocations = locations.filter(location =>
+                    location.toLowerCase().includes(userInput)
+                );
+
+                // Clear the suggestions list
+                suggestionsList.innerHTML = "";
+
+                // Display matching location suggestions
+                for (const location of filteredLocations) {
+                    const suggestionItem = document.createElement("li");
+                    suggestionItem.textContent = location;
+
+                    suggestionItem.addEventListener("click", () => {
+                        locationInput.value = location;
+                        suggestionsList.innerHTML = "";
+                    });
+
+                    suggestionsList.appendChild(suggestionItem);
+                }
+            });
+        </script>
+    </body>
+</html>

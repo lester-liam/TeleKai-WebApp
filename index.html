@@ -6,43 +6,43 @@
         <meta
         name="viewport"
         content="width=device-width,user-scalable=no,initial-scale=1"/>
-        
+    
         <link rel="stylesheet" href="css/template.css"/>
-        <link rel="stylesheet" href="css/index.css"/>
 
         <script src="js/functions.js"></script>
+
+        <style>
+            .container {
+                margin-top: 25px;
+                margin-left: 5%;
+            }
+
+            input[type="button"] {
+                background-color: #e6e6e6;
+                color: gray
+            }
+        </style>
     </head>
     <body>
         <div class="headings">
             <div class="header">
-                <h1>Home</h1>
+                <h1>App Name</h1>
             </div>
             <div class="subheader">
-                <p id="subheader-text">Home</p>
+                <h4 id="subheader-text">Welcome to &ltApp-Name&gt</h4>
             </div>
         </div>
-        <div class="list-body">
-            <li onmouseover="select(1)" onmouseout= "deselect(this)">
-                My Profile
-                <img src="assets/right-arrow.png" alt="right-arrow"/>
-            </li>
-            <li onmouseover="select(2)" onmouseout= "deselect(this)">
-                Consultations
-                <img src="assets/right-arrow.png" alt="right-arrow"/>
-            </li>
-            <li onmouseover="select(3)" onmouseout= "deselect(this)">
-                Prescription
-                <img src="assets/right-arrow.png" alt="right-arrow"/></li>
-            <li onmouseover="select(4)" onmouseout= "deselect(this)">
-                Medical Records
-                <img src="assets/right-arrow.png" alt="right-arrow"/></li>
-            <li onmouseover="select(5)" onmouseout= "deselect(this)">
-                Vaccination Records
-                <img src="assets/right-arrow.png" alt="right-arrow"/></li>
-            <li onmouseover="select(6)" onmouseout= "deselect(this)">
-                Logout
-                <img src="assets/right-arrow.png" alt="right-arrow"/></li>
-            </li>
+        <div class="container">
+            <label for="Phone Number">Phone Number:</label><br>
+            <input type="text" disabled><br><br>
+            <input type="button" class="btn" value="Send" disabled><br><br>
+            <label for="Phone Number">One Time PIN (OTP):</label><br>
+            <input type="text" disabled><br><br>
+            <input type="button" class="btn" value="Login" disabled>
+            <br><br>
+            <a href="menu.html">
+                <button>Demo Account</button>
+            </a>
         </div>
     </body>
 </html>

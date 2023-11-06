@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8"/>
+        <meta
+        name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1"/>
+        
+        <link rel="stylesheet" href="../../css/template.css"/>
+        <link rel="stylesheet" href="../../css/index.css"/>
+
+        <script src="../../js/functions.js"></script>
+    </head>
+    <body>
+        <div class="headings">
+            <div class="header">
+                <h1>Consultations</h1>
+            </div>
+            <div class="subheader">
+                <h4 id="subheader-text">Please select an option</h4>
+            </div>
+        </div>
+        <div class="list-body">
+        <a href="virtual-consult/book_appt.html">
+            <li onmouseover="select_consultOptions(0)" onmouseout= "deselect(this)">
+                <p class="pri">Book Online<img src="../../assets/right-arrow.png" alt="right-arrow"/></p>
+            </li>
+        </a>
+        <a href="physical-consult/search_clinic.html">
+            <li onmouseover="select_consultOptions(1)" onmouseout= "deselect(this)">
+                <p class="pri">Book Physical<img src="../../assets/right-arrow.png" alt="right-arrow"/></p>
+            </li>
+        </a>
+        <a href="upcoming_consults.html">
+            <li onmouseover="select_consultOptions(2)" onmouseout= "deselect(this)">
+                <p class="pri">Upcoming Consults<img src="../../assets/right-arrow.png" alt="right-arrow"/></p>
+            </li>
+        </a>
+        <a href="past_consults.html">
+            <li onmouseover="select_consultOptions(2)" onmouseout= "deselect(this)">
+                <p class="pri">Past Consults<img src="../../assets/right-arrow.png" alt="right-arrow"/></p>
+            </li>
+        </a>
+    </body>
+    <footer class="softkey">
+        <div id="softkey-left"></div>
+        <div id="softkey-center">SELECT</div>
+        <a href="../../menu.html"><div id="softkey-right">Back</div></a>
+    </footer>
+</html>

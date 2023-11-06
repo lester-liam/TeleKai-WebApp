@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8"/>
+        <meta
+        name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1"/>
+        
+        <link rel="stylesheet" href="../../../css/template.css"/>
+        <link rel="stylesheet" href="../../../css/button-hover.css">
+
+        <style>
+            div.form {
+                padding-left: 5%;
+            }
+
+            #bday_dd, #bday_mm
+            {
+                width: 25px;
+            }
+
+            #bday_yy
+            {
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="headings">
+            <div class="header">
+                <h1>Book Physical Consultation </h1>
+            </div>
+            <div class="subheader">
+                <h4 id="subheader-text">Please check your details</h4>
+            </div>
+        </div>
+        <div class="form">
+            <form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="lname">Identification No.</label><br>
+                <input type="text" id="id" name="lname"><br>
+                <label for="bday">Date of Birth (dd/mm/yyyy):</label><br>
+                <input type="text" id="bday_dd">
+                <input type="text" id="bday_mm">
+                <input type="text" id="bday_yy"><br>
+                <label for="bday">Clinic:</label><br>
+                <input type="text" id="clinic_address" placeholder="<location_selected>" disabled><br><br>
+                <a href="clinic_appt_date.html">
+                    <input type="button" value="Confirm">
+                </a>
+            </form>
+        </div>
+    </body>
+</html>

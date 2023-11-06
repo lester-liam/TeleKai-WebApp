@@ -1,0 +1,47 @@
+button {
+    background-color: #E6E6E6;
+    
+    font-family: OpenSansRegular;
+    font-size: 17px;
+    color: #6A6A6A;
+    padding: 6px 10px;
+    margin-bottom: 3px;
+    cursor:pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #770FAF;
+    
+    font-family: OpenSansRegular;
+    font-size: 17px;
+    color: #E6E6E6;
+    padding: 6px 10px;
+    margin-bottom: 2px;
+    cursor:pointer;
+    border: none;
+}
+
+input[type=button] {
+    background-color: #E6E6E6;
+    
+    font-family: OpenSansRegular;
+    font-size: 17px;
+    color: #6A6A6A;
+    padding: 6px 10px;
+    margin-bottom: 3px;
+    cursor:pointer;
+    border: none;
+}
+
+input[type=button]:hover {
+    background-color: #770FAF;
+    
+    font-family: OpenSansRegular;
+    font-size: 17px;
+    color: #E6E6E6;
+    padding: 6px 10px;
+    margin-bottom: 2px;
+    cursor:pointer;
+    border: none;
+}
