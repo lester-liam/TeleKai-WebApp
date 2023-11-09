@@ -135,55 +135,82 @@ p.link {
     font-size: 17px;
 }
 
-footer
-{
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    background-color: black;
-    color: white;
-    width: 100%;
-    position: fixed;
+p.ul {
+    font-family: OpenSansRegular;
+    font-size: 17px;
 }
 
+p.BTN {
+    font-family: OpenSansRegular;
+    font-size: 17px;
+}
 
+/* H2	Header of body text	Semibold/600	17 */
+@font-face {
+    font-family: OpenSansSemiBold600;
+    src: url(../fonts/OpenSans-SemiBold.woff);
+    font-weight: 600;
+}
+
+h2 {
+    font-family: OpenSansSemiBold600;
+    font-size: 17px;
+}
+
+/* P.LINK	Hyperlink text	Bold/700	17 */
+@font-face {
+    font-family: OpenSansBold;
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+}
+
+p.link {
+    font-family: OpenSansBold;
+    font-size: 17px;
+}
+
+a {
+    color: #f2f2f2;
+}
 
 footer {
-    width:240px;
-    height: 30px;
-    text-align:center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    height: 25px;
+    background-color: #6A6A6A;
+    color: white;
     display: flex;
     justify-content: space-between;
-    color: white;
+    align-items: flex-end;
 }
+
 
 #softkey-left {
     font-family: OpenSansRegular;
     font-size: 14px;
-    float:left;
     text-align: center;
     margin: 2px;
-    width:80px;
+    width: 80px;
 }
 
 #softkey-center {
     font-family: OpenSansRegular;
     font-size: 14px;
-    margin:0 auto;
-    margin: 2px;
-    width:80px;
-
     text-align: center;
+    margin: 2px;
+    width: 80px;
 }
 
 #softkey-right {
     font-family: OpenSansRegular;
     font-size: 14px;
-    text-align: right;;
-    float: right;
+    text-align: right;
     margin: 2px;
-    width:80px;
+    width: 80px;
+}
 
-    margin-right: 5px;
+body {
+    margin-bottom: 25px; /* equal to the height of the footer */
 }
