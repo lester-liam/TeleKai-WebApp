@@ -1,22 +1,22 @@
 {
   "version": "1.0.0",
-  "name": "KaiOS App",
-  "description": "A file simple example manifest.webapp",
+  "name": "TeleKai App",
+  "description": "A TeleHealth Service designed for KaiOS",
   "type": "web",
-  "launch_path": "menu.html",
+  "launch_path": "index.html",
   "icons": {
-    "56": "/your/repository/icons/ic_Appname_56.png",
-    "112": "/your/repository/icons/ic_Appname_112.png"
+    "56": "/icons/telekai-baseline-icon.png",
+    "112": "/icons/telekai-icon-112.png"
   },
   "developer": {
-    "name": "Your Name",
-    "url": "http://yourawesomeapp.com"
+    "name": "Lester Liam",
+    "url": "https://example.com/"
   },
   "locales": {
     "en-US": {
-      "name": "KaiOS App",
-      "subtitle": "Short description for the user",
-      "description": "Brief description of your app"
+      "name": "TeleKai App",
+      "subtitle": "Telehealth services at your fingertips",
+      "description": "Affordable Healthcare anywhere, anytime"
     }
   },
   "default_locale": "en-US"
