@@ -1,9 +1,6 @@
 
 # TeleKai WebApp for KaiOS
 
-## About
-This GitHub repository contains the solution to our solution demo prototype for Team Kai GDG George Town DevHack 2023.
-
 ## Problem Statement
 
 Telehealth has improved accessibility to healthcare ever since the COVID-19 pandemic. While cost of smartphones have fallen, they remain unaffordable towards the low-middle income countries, the lack of access to basic smartphones results in lack of healthcare access for people without physical healthcare facilities nearby. A study by World Health Organization (WOH) shows a maternal death occurs every 2 minutes, with almost 95% occured in those group of people. 
